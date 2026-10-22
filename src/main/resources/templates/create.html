@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="bg" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Добави ученик</title></head>
+<body>
+    <h1>Добави ученик</h1>
+    <form action="/create" method="post">
+        <label for="name">Име:</label>
+        <input id="name" name="name" type="text" maxlength="100" required>
+        <button type="submit">Добави</button>
+    </form>
+    <p th:text="${message}"></p>
+    <a href="/">Начало</a>
+</body>
+</html>

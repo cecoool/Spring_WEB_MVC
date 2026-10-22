@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="bg" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Покажи учениците</title></head>
+<body>
+<h1>Покажи учениците</h1>
+<form action="/students" method="get">
+<button type="submit">Покажи всички</button>
+</form>
+<div th:if="${students != null}">
+    <p th:if="${students.isEmpty()}">Няма ученици.</p>
+    <p th:each="student : ${students}">
+        <span th:text="${student.id}"></span> — <span th:text="${student.name}"></span>
+    </p>
+</div>
+<p th:text="${message}"></p>
+<a href="/">Начало</a>
+</body>
+</html>

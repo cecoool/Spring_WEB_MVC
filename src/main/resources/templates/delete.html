@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="bg" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Изтрий ученик</title></head>
+<body>
+    <h1>Изтрий ученик</h1>
+    <form action="/delete" method="post">
+        <label for="id">ID:</label>
+        <input id="id" name="id" type="number" min="1" max="2147483647" required>
+        <button type="submit">Изтрий</button>
+        </form>
+        <p th:text="${message}"></p>
+        <a href="/">Начало</a>
+</body>
+</html>

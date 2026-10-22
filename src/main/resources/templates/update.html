@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="bg" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Промени име</title></head>
+<body>
+<h1>Промени име</h1>
+<form action="/update" method="post">
+<label for="id">ID:</label>
+<input id="id" name="id" type="number" min="1" max="2147483647" required>
+<label for="name">Име:</label>
+<input id="name" name="name" type="text" maxlength="100" required>
+<button type="submit">Промени</button>
+</form>
+<p th:text="${message}"></p>
+<a href="/">Начало</a>
+</body>
+</html>
