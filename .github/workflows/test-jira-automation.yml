@@ -1,0 +1,15 @@
+name: Test Jira automation
+
+on:
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  test-failure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail on purpose to test Jira
+        run: |
+          echo "This failure is intentional: testing the Jira automation."
+          exit 1
