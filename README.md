@@ -1,5 +1,5 @@
 # Ученици — CRUD
- - branched
+ - branched -> second commit
 Необходими са JDK 21 или по-нов и работещ PostgreSQL.
 
 1. Отворете pgAdmin и изпълнете веднъж.
